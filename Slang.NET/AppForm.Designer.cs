@@ -78,6 +78,7 @@ namespace Slang.NET
             this.btn_Resume.TabIndex = 3;
             this.btn_Resume.Text = "Resume";
             this.btn_Resume.UseVisualStyleBackColor = true;
+            this.btn_Resume.Click += new System.EventHandler(this.btn_Resume_Click);
             // 
             // btn_Quit
             // 

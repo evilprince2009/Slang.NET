@@ -13,7 +13,7 @@ namespace Slang.NET
 {
     public partial class AppForm : Form
     {
-        private SpeechSynthesizer SpeechHandler;
+        private SpeechSynthesizer _speechHandler;
         public AppForm()
         {
             InitializeComponent();
@@ -21,7 +21,7 @@ namespace Slang.NET
 
         private void AppForm_Load(object sender, EventArgs e)
         {
-            SpeechHandler = new SpeechSynthesizer();
+            _speechHandler = new SpeechSynthesizer();
             btn_Resume.Enabled = false;
             btn_Pause.Enabled = false;
             btn_Quit.Enabled = false;
@@ -29,11 +29,11 @@ namespace Slang.NET
 
         private void btn_Talk_Click(object sender, EventArgs e)
         {
-            SpeechHandler.Dispose();
+            _speechHandler.Dispose();
             if (inputTextBox.Text != "")
             {
-                SpeechHandler = new SpeechSynthesizer();
-                SpeechHandler.SpeakAsync(inputTextBox.Text);
+                _speechHandler = new SpeechSynthesizer();
+                _speechHandler.SpeakAsync(inputTextBox.Text);
                 btn_Pause.Enabled = true;
                 btn_Quit.Enabled = true;
             }
@@ -41,13 +41,26 @@ namespace Slang.NET
 
         private void btn_Pause_Click(object sender, EventArgs e)
         {
-            if (SpeechHandler != null)
+            if (_speechHandler != null)
             {
-                if (SpeechHandler.State == SynthesizerState.Speaking)
+                if (_speechHandler.State == SynthesizerState.Speaking)
                 {
-                    SpeechHandler.Pause();
+                    _speechHandler.Pause();
                     btn_Resume.Enabled = true;
                     btn_Talk.Enabled = false;
+                }
+            }
+        }
+
+        private void btn_Resume_Click(object sender, EventArgs e)
+        {
+            if (_speechHandler != null)
+            {
+                if (_speechHandler.State == SynthesizerState.Paused)
+                {
+                    _speechHandler.Resume();
+                    btn_Resume.Enabled = false;
+                    btn_Talk.Enabled = true;
                 }
             }
         }
