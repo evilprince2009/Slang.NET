@@ -38,7 +38,7 @@ namespace Slang.NET
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(0, 1);
+            this.richTextBox1.Location = new System.Drawing.Point(16, 15);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(321, 213);
             this.richTextBox1.TabIndex = 0;
@@ -46,7 +46,7 @@ namespace Slang.NET
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(-1, 218);
+            this.button1.Location = new System.Drawing.Point(15, 232);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -55,7 +55,7 @@ namespace Slang.NET
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(81, 217);
+            this.button2.Location = new System.Drawing.Point(97, 231);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 2;
@@ -64,7 +64,7 @@ namespace Slang.NET
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(163, 217);
+            this.button3.Location = new System.Drawing.Point(179, 231);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 3;
@@ -73,7 +73,7 @@ namespace Slang.NET
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(245, 217);
+            this.button4.Location = new System.Drawing.Point(261, 231);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 4;
@@ -84,13 +84,14 @@ namespace Slang.NET
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(322, 240);
+            this.ClientSize = new System.Drawing.Size(354, 263);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.richTextBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "AppForm";
             this.Text = "Slang.NET";
             this.ResumeLayout(false);
