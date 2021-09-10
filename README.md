@@ -1,6 +1,7 @@
 ## Slang.NET
 
 A simple text to speech conversion app written in C#
+
 ![Slang.NET](https://github.com/evilprince2009/Slang.NET/blob/main/Screenshot_1.png)
 
 ### How to use Slang.NET
