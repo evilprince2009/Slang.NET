@@ -31,10 +31,10 @@ namespace Slang.NET
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AppForm));
             this.inputTextBox = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn_Talk = new System.Windows.Forms.Button();
+            this.btn_Pause = new System.Windows.Forms.Button();
+            this.btn_Resume = new System.Windows.Forms.Button();
+            this.btn_Quit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // inputTextBox
@@ -47,51 +47,55 @@ namespace Slang.NET
             this.inputTextBox.TabIndex = 0;
             this.inputTextBox.Text = "";
             // 
-            // button1
+            // btn_Talk
             // 
-            this.button1.Location = new System.Drawing.Point(15, 232);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_Talk.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Talk.Location = new System.Drawing.Point(15, 232);
+            this.btn_Talk.Name = "btn_Talk";
+            this.btn_Talk.Size = new System.Drawing.Size(75, 23);
+            this.btn_Talk.TabIndex = 1;
+            this.btn_Talk.Text = "Talk";
+            this.btn_Talk.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btn_Pause
             // 
-            this.button2.Location = new System.Drawing.Point(97, 231);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_Pause.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Pause.Location = new System.Drawing.Point(97, 231);
+            this.btn_Pause.Name = "btn_Pause";
+            this.btn_Pause.Size = new System.Drawing.Size(75, 23);
+            this.btn_Pause.TabIndex = 2;
+            this.btn_Pause.Text = "Pause";
+            this.btn_Pause.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btn_Resume
             // 
-            this.button3.Location = new System.Drawing.Point(179, 231);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_Resume.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Resume.Location = new System.Drawing.Point(179, 231);
+            this.btn_Resume.Name = "btn_Resume";
+            this.btn_Resume.Size = new System.Drawing.Size(75, 23);
+            this.btn_Resume.TabIndex = 3;
+            this.btn_Resume.Text = "Resume";
+            this.btn_Resume.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btn_Quit
             // 
-            this.button4.Location = new System.Drawing.Point(261, 231);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_Quit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Quit.Location = new System.Drawing.Point(261, 231);
+            this.btn_Quit.Name = "btn_Quit";
+            this.btn_Quit.Size = new System.Drawing.Size(75, 23);
+            this.btn_Quit.TabIndex = 4;
+            this.btn_Quit.Text = "Quit";
+            this.btn_Quit.UseVisualStyleBackColor = true;
             // 
             // AppForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(354, 263);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_Quit);
+            this.Controls.Add(this.btn_Resume);
+            this.Controls.Add(this.btn_Pause);
+            this.Controls.Add(this.btn_Talk);
             this.Controls.Add(this.inputTextBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -105,10 +109,10 @@ namespace Slang.NET
         #endregion
 
         private System.Windows.Forms.RichTextBox inputTextBox;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_Talk;
+        private System.Windows.Forms.Button btn_Pause;
+        private System.Windows.Forms.Button btn_Resume;
+        private System.Windows.Forms.Button btn_Quit;
     }
 }
 
