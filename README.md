@@ -11,10 +11,10 @@ A simple text to speech conversion app written in C#
 ### Once the application is running, you can use the follow the steps to convert text to speech:
 
 - Paste some text in the text box
-- Click the _Talk_ button to readout the text
-- Click the _Pause_ button to interrupt reading
-- Click the _Resume_ button to resume reading
-- Click the _Quit_ button to stop reading
+- Click the _[Talk]_ button to readout the text
+- Click the _[Pause]_ button to interrupt reading
+- Click the _[Resume]_ button to resume reading
+- Click the _[Quit]_ button to stop reading
 
 ### Pretty simple , right ?
 
