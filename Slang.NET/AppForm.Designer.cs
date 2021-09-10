@@ -56,6 +56,7 @@ namespace Slang.NET
             this.btn_Talk.TabIndex = 1;
             this.btn_Talk.Text = "Talk";
             this.btn_Talk.UseVisualStyleBackColor = true;
+            this.btn_Talk.Click += new System.EventHandler(this.btn_Talk_Click);
             // 
             // btn_Pause
             // 

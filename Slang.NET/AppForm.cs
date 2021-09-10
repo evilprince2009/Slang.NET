@@ -26,5 +26,17 @@ namespace Slang.NET
             btn_Pause.Enabled = false;
             btn_Quit.Enabled = false;
         }
+
+        private void btn_Talk_Click(object sender, EventArgs e)
+        {
+            SpeechHandler.Dispose();
+            if (inputTextBox.Text != "")
+            {
+                SpeechHandler = new SpeechSynthesizer();
+                SpeechHandler.SpeakAsync(inputTextBox.Text);
+                btn_Pause.Enabled = true;
+                btn_Quit.Enabled = true;
+            }
+        }
     }
 }
