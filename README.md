@@ -19,4 +19,4 @@ A simple text to speech conversion app written in C#
 
 ### Pretty simple , right ?
 
-[Ibne Nahian](https://www.facebook.com/evilprince2009/)
+[Ibne Nahian](https://www.facebook.com/evilprince2009/) 🤞🤞🤞
