@@ -102,6 +102,7 @@ namespace Slang.NET
             this.MaximizeBox = false;
             this.Name = "AppForm";
             this.Text = "Slang.NET";
+            this.Load += new System.EventHandler(this.AppForm_Load);
             this.ResumeLayout(false);
 
         }
