@@ -38,5 +38,18 @@ namespace Slang.NET
                 btn_Quit.Enabled = true;
             }
         }
+
+        private void btn_Pause_Click(object sender, EventArgs e)
+        {
+            if (SpeechHandler != null)
+            {
+                if (SpeechHandler.State == SynthesizerState.Speaking)
+                {
+                    SpeechHandler.Pause();
+                    btn_Resume.Enabled = true;
+                    btn_Talk.Enabled = false;
+                }
+            }
+        }
     }
 }

@@ -67,6 +67,7 @@ namespace Slang.NET
             this.btn_Pause.TabIndex = 2;
             this.btn_Pause.Text = "Pause";
             this.btn_Pause.UseVisualStyleBackColor = true;
+            this.btn_Pause.Click += new System.EventHandler(this.btn_Pause_Click);
             // 
             // btn_Resume
             // 
