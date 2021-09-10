@@ -30,20 +30,22 @@ namespace Slang.NET
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AppForm));
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.inputTextBox = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // richTextBox1
+            // inputTextBox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(16, 15);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(321, 213);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.inputTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inputTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputTextBox.Location = new System.Drawing.Point(16, 15);
+            this.inputTextBox.Name = "inputTextBox";
+            this.inputTextBox.Size = new System.Drawing.Size(321, 213);
+            this.inputTextBox.TabIndex = 0;
+            this.inputTextBox.Text = "";
             // 
             // button1
             // 
@@ -90,7 +92,7 @@ namespace Slang.NET
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.inputTextBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -102,7 +104,7 @@ namespace Slang.NET
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox inputTextBox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
